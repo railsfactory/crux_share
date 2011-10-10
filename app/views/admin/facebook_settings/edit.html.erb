@@ -1,0 +1,19 @@
+<%= render  'admin/shared/configuration_menu' %>
+<% if params[:is_custom]==1%>
+<h1><%= t('custom_domain')  %></h1>
+<%else%>
+<h1><%= t('sub_domain')  %></h1>
+
+<%end%>
+<% form_tag(admin_facebook_settings_path, :method => :put) do -%>
+
+    <label><%= t("facebook.app_key") %>:</label>
+    <%= text_field_tag 'saas_shares[key]',@facebook_settings ? @facebook_settings.key : "Specify your key here" %>
+<%=hidden_field_tag 'saas_shares[is_custom]',params[:is_custom]%>
+  <p class="form-buttons">
+    <%= button t('update') %>
+    <%= t("or") %> <%= link_to t("cancel"), admin_facebook_settings_url %>
+  </p>
+	<%end%>
+
+

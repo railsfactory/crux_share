@@ -1,0 +1,5 @@
+<%= render :partial => 'admin/shared/configuration_menu' %>
+<h1><%= t('facebook_settings')  %></h1>
+
+<h2><%= link_to t("customize_domain"),edit_admin_facebook_settings_path(:is_custom=>1)%><br/><br/>
+<%= link_to t("sub_domain"),edit_admin_facebook_settings_path(:is_custom=>0)%></h2>
