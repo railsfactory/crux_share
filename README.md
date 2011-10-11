@@ -17,7 +17,9 @@ bundle install
 Next, run the rake task that copies the necessary migrations and assets to your project:
 
 rake spree_core:install
+
 rake crux:install
+
 rake crux_share:install
 
 Now you should be able to boot up your server with:
