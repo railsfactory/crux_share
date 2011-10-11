@@ -1,7 +1,7 @@
 ﻿CruxShare
 =========
 
-Share the product url in social network using facebook.
+Share the product url in social network(facebook).
 
 Installation
 =========
