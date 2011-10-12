@@ -1,6 +1,8 @@
 <div class="fb-share">
-<p>Share this in facebook</p>
-<a class="facebook" href ='http://www.facebook.com/sharer.php?u=<%=product_url%>' target = "_blank"><img src="/images/btn-facebook.png"><img></a>
+<p>Share</p>
+<%turl = "http://twitter.com/share?related=&source=tweetbutton&text='See this product'&url=#{product_url}&via=crux"%>
+<a class="facebook" href ="http://www.facebook.com/sharer.php?u=<%=product_url%>" target = "_blank"><img src="/images/btn-facebook.png"><img></a>
+<a class="product-twitter" href = "<%=turl%>"  target = "_blank"><img src="/images/btn-twitter.png"></a>
 </div>
 
 
